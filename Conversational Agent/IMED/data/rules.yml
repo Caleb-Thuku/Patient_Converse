@@ -1,0 +1,135 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: Say 'I am a Joe, an AI powered bot for medical student assessment' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  
+- rule: welcome user
+  conversation_start: true  # this rule only applies at the beginning of a conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Match fixing
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  
+- rule: Match fixing
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+  
+- rule: Match fixing
+  steps:
+  - intent: wherePain
+  - action: utter_wherePain
+  
+- rule: Match fixing
+  steps:
+  - intent: painType
+  - action: utter_painType
+  
+- rule: Match fixing
+  steps:
+  - intent: painType2
+  - action: utter_painType2
+  
+- rule: Match fixing
+  steps:
+  - intent: painSymptoms
+  - action: utter_painSymptoms
+  
+- rule: Match fixing
+  steps:  
+  - intent: painChange
+  - action: utter_painChange
+  
+- rule: Match fixing
+  steps:
+  - intent: painNature
+  - action: utter_painNature
+ 
+- rule: Match fixing
+  steps:
+  - intent: hematesisMain
+  - action: utter_hematesisMain
+
+  
+- rule: Match fixing
+  steps:
+  - intent: hematesisMore
+  - action: utter_hematesisMore
+   
+- rule: Match fixing
+  steps:
+  - intent: stoolGeneral
+  - action: utter_stoolGeneral
+    
+- rule: Match fixing
+  steps:
+  - intent: stoolBlack
+  - action: utter_stoolBlack
+    
+- rule: Match fixing
+  steps:
+  - intent: stoolFeatures
+  - action: utter_stoolFeatures
+    
+- rule: Match fixing
+  steps:
+  - intent: anaemiaFatigue
+  - action: utter_anaemiaFatigue
+    
+- rule: Match fixing
+  steps:
+  - intent: anaemiaHeart
+  - action: utter_anaemiaHeart  
+    
+- rule: Match fixing
+  steps:
+  - intent: anaemiaDaze
+  - action: utter_anaemiaDaze
+  
+- rule: Match fixing
+  steps:
+  - intent: anaemiaNone
+  - action: utter_anaemiaNone
+    
+- rule: Match fixing
+  steps:
+  - intent: gastric-duodenal-NSAIDS
+  - action: utter_duodenal-gastric-NSAIDS
+    
+- rule: Match fixing
+  steps:
+  - intent: smoking
+  - action: utter_smoking
+    
+- rule: Match fixing
+  steps:
+  - intent: alcohol
+  - action: utter_alcohol
+    
+- rule: Match fixing
+  steps:
+  - intent: hpylori
+  - action: utter_hpylori
+    
+- rule: Match fixing
+  steps:
+  - intent: family
+  - action: utter_family

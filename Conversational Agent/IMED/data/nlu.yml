@@ -1,0 +1,214 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - Ssup doc
+    - hey there
+    - Habari yako
+    - hey doc
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+    - Morning
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - See you later, or hopefully not
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - Life is amazing
+    - I'm fine thank you
+    - Okay Joe, how may I help you today
+    - How may I be of assistance
+    - Why are we here today?
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - Sorry about that
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a medical student?
+    - are you a doctor?
+    - am I talking to a real patient?
+    - am I talking to a bot?
+    - I'm good, are you a bot?
+    - How are you
+- intent: wherePain
+  examples: |
+    - Where do you feel the pain?
+    - Unaskia hiyo pain wapi","Where is the pain?
+    - Does the pain radiated to any other part of the body?
+    - Alright, so where is the pain
+    - So, pain you said. Where is it?
+- intent: painType
+  examples: |
+    - Was the pain gradual or sudden in onset?
+    - How did the pain set in
+    - How was the pain coming in
+    - Was it quick or over time
+- intent: painType2
+  examples: |
+    - Is the pain dull
+    - Is the pain sharp
+    - Is it intermittent
+    - Is it crampy or burning
+    - Is it a burning pain
+    - Is it sharp or dull
+    - How is the pain
+- intent: painSymptoms
+  examples: |
+    - Does the pain come with any other symptoms
+    - Any other symptoms?
+    - Do you feel Nausea, Anorexia, Fever, Diarrhoea?
+    - Do you feel anything else?
+    - How sick are you?
+- intent: painChange
+  examples: |
+    - Is the pain relieved by anything like medication, food
+    - Is the pain aggravated by anything?
+    - Does food make it worse?
+- intent: painNature
+  examples: |
+    - What is the timing of the pain?
+    - When is the pain worst?
+    - How would you rate the pain on a scale of 1-10?
+    - How bad would you rate the pain is
+- intent: hematesisMain
+  examples: |
+    - Do you vomit?
+    - Have you vomited?
+    - What is the colour of the vomit?
+    - Was there any odor from the vomit?
+    - What is the quantity of the vomit?
+    - How much blood do you vomit
+- intent: hematesisMore
+  examples: |
+    - At what time of the day do you vomit?
+    - Is the vomiting preceeded by nausea?
+    - How often do you vomit?
+    - Do you vomit everything?
+- intent: stoolGeneral
+  examples: |
+    - Do you pass stool?
+    - Are you monitoring your stool
+    - What is the colour of the stool?
+    - How does your stool look
+    - What is the consistency of the stool?
+- intent: stoolBlack
+  examples: |
+    - When did you first notice the black stool?
+    - When did you get black stool
+- intent: stoolFeatures
+  examples: |
+    - Is the stool blood stained?
+    - Does your stool have mucus?
+    - Does it have mucus?
+- intent: anaemiaFatigue
+  examples: |
+    - Are you easily fatigued?
+    - Do you get headaches?
+- intent: anaemiaHeart
+  examples: |
+    - Are you aware of your heartbeat?
+    - Does your head hurt?
+    - Does your head ache?
+- intent: anaemiaDaze
+  examples: |
+    - Have you experienced dizziness?
+    - Have you lost consciousness?
+- intent: anaemiaNone
+  examples: |
+    - Did you have any seizures while unconscious?
+    - Do you feel bloated or constipated?
+    - Do you experience heart burn after meals?
+    - Do you have difficulty swallowing food or water?
+    - Any esophageal varices?
+    - Do you get full after eating a regular portion of food?
+- intent: gastric-duodenal-NSAIDS
+  examples: |
+    - Have you lost weight?
+    - gastric ulcers?
+    - Have you gained weight?
+    - Do you think you have duodenal ulcers
+    - Are you on any medications?
+- intent: smoking
+  examples: |
+    - Do you smoke?
+    - How many packs do you smoke in a day?
+- intent: alcohol
+  examples: |
+    - Do you drink alcohol?
+    - How much alcohol do you drink?
+    - Do you smoke or drink alcohol
+- intent: hpylori
+  examples: |
+    - Have you had a previous H.pylori infection?
+    - Have you been infected with hpylori before?
+- intent: family
+  examples: |
+    - Has anyone else in your family ever experienced these symptoms?
+    - Do you know any person in your family with such symptoms
+- intent: nlu_fallback
+  examples: |
+    - fuck
+    - fnnf
+    - asg
+    - hroen

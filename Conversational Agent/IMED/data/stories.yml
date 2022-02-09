@@ -1,0 +1,77 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: wherePain
+  - action: utter_wherePain
+  - intent: painType
+  - action: utter_painType
+  - intent: painType2
+  - action: utter_painType2
+  - intent: painSymptoms
+  - action: utter_painSymptoms
+  - intent: painChange
+  - action: utter_painChange
+  - intent: painNature
+  - action: utter_painNature
+  - intent: hematesisMain
+  - action: utter_hematesisMain
+  - intent: hematesisMore
+  - action: utter_hematesisMore
+  - intent: stoolGeneral
+  - action: utter_stoolGeneral
+  - intent: stoolBlack
+  - action: utter_stoolBlack
+  - intent: stoolFeatures
+  - action: utter_stoolFeatures
+  - intent: anaemiaFatigue
+  - action: utter_anaemiaFatigue
+  - intent: anaemiaHeart
+  - action: utter_anaemiaHeart  
+  - intent: anaemiaDaze
+  - action: utter_anaemiaDaze
+  - intent: anaemiaNone
+  - action: utter_anaemiaNone
+  - intent: gastric-duodenal-NSAIDS
+  - action: utter_duodenal-gastric-NSAIDS
+  - intent: smoking
+  - action: utter_smoking
+  - intent: alcohol
+  - action: utter_alcohol
+  - intent: hpylori
+  - action: utter_hpylori
+  - intent: family
+  - action: utter_family
+  
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+#  - intent: mood_unhappy
+ # - action: utter_cheer_up
+#  - action: action_listen
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+

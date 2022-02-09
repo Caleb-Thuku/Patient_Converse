@@ -1,0 +1,187 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- bot_challenge
+- nlu_fallback
+- greet
+- mood_great
+- alcohol
+- painType
+- wherePain
+- painType2
+- complaint
+- goodbye
+- painChange
+- painSymptoms
+- affirm
+- mood_unhappy
+- painNature
+- hematesisMain
+- hematesisMore
+- stoolGeneral
+- stoolBlack
+- stoolFeatures
+- anaemiaFatigue
+- anaemiaHeart
+- anaemiaDaze
+- anaemiaNone
+- gastric-duodenal-NSAIDS
+- smoking
+- hpylori
+- family
+responses:
+  utter_greet:
+  - text: |
+      Hey! How are you?
+  - text: |
+      Hi! Hope you are well
+  utter_please_rephrase:
+  - text: |
+      I'm sorry Doctor, I didn't quite understand that. Could you rephrase?
+  utter_cheer_up:
+  - text: |
+      Well, I've been worse before Doc
+  - text: |
+      Happens to the best of us!
+  - text: |
+      It is what it is
+  - text: |
+      Ooh, let's talk about how I'm feeling now. Proceed
+  utter_happy:
+  - text: |
+      On to it then, I'm Joe, kindly assist me. I'm in some pain
+  utter_goodbye:
+  - text: |
+      Bye
+      Your Score is: 78
+  - text: |
+      Bye
+      Your Score is: 54
+  - text: |
+      Bye
+      Your Score is: 65
+  - text: |
+      Bye   
+      Your Score is: 35
+  utter_iamabot:
+  - text: |
+      I am a Joe, your patient!
+  - text: |
+      I'm just Joe, I have my limitations
+  utter_wherePain:
+  - text: |
+      The pain is just under my right ribs
+  - text: |
+      It's Right here under my right set of ribs
+  utter_painType:
+  - text: |
+      It came gradually
+      It was a gradual onsent and just got worse
+  - text: |
+      It set in slowly and grew worse man
+  utter_painType2:
+  - text: |
+      It's more of a burning pain Doctor
+  utter_painSymptoms:
+  - text: |
+      I'm also having a bit of vomiting
+  - text: |
+      I feel both nausea and vomit sometimes
+  utter_painChange:
+  - text: |
+      I can't tell if anything relieves the pain
+  - text: |
+      None of that makes a difference
+      The pain remains the same either way
+  utter_painNature:
+  - text: |
+      I can't tell, it's just so uncomfortable and unsettling. It comes and goes as it likes
+  - text: |
+      The pain is not good, I'd give it a 7 on the scale of 1 - 10
+  utter_hematesisMain:
+  - text: |
+      Yes, I have vomited, and it was all blood stained. That's when I knew something was really wrong Doc. I mean, the vomit was enough to fill a cup
+  - text: |
+      Yes. the vomit, it even had blood clots and it was a lot. Enough to fill a cup
+  utter_hematesisMore:
+  - text: |
+      The vomiting happens mostly after meals, just everything. Plus I do feel some nausea right before
+  - text: |
+      Mazee, it just ain't it. After meals I feel nausea and end up vomiting everything.
+  utter_stoolGeneral:
+  - text: |
+      Actually, when I pass stool it happens to be dark brown to black
+  - text: |
+      My stool is all normal, that's if brown is the normal colour
+  utter_stoolBlack:
+  - text: |
+      It started when I was vomiting blood
+  - text: |
+      Yesterday Doc, when i realized my symptoms were serious.
+  utter_stoolFeatures:
+  - text: |
+      Nope, if there was then maybe I didn't notice
+  utter_anaemiaFatigue:
+  - text: |
+      Yes. Quite often
+  utter_anaemiaHeart:
+  - text: |
+      A bit, yes
+  - text: |
+      Nope
+  utter_anaemiaDaze:
+  - text: |
+      Yes I have. Once, but for less than an hour. It was actually at work, everyone was really worried
+  - text: |
+      I have experienced it.
+  utter_anaemiaNone:
+  - text: |
+      Pleased to not experience any of that.
+  - text: |
+      Nope.
+  utter_duodenal-gastric-NSAIDS:
+  - text: |
+      Actually, nope
+  - text: |
+      Glad that hasn't happened to me
+  utter_smoking:
+  - text: |
+      Doctor! Do i look like a smoker to you. Of course not.
+  - text: |
+      Smoking is bad for anyone's health you know
+  utter_alcohol:
+  - text: |
+      No Doctor, I dont drink
+  - text: |
+      Yes I drink, but not that much really. Just enough to get a man by.
+  utter_hpylori:
+  - text: |
+      Not sure
+  - text: |
+      I really doubt it, HPYLORI! I'd know
+  utter_family:
+  - text: |
+      None that i know of
+  - text: |
+      Not that I'm aware of
+actions:
+- utter_alcohol
+- utter_anaemiaDaze
+- utter_cheer_up
+- utter_duodenal-gastric-NSAIDS
+- utter_family
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_painChange
+- utter_painSymptoms
+- utter_painType
+- utter_painType2
+- utter_please_rephrase
+- utter_smoking
+- utter_wherePain
+- utter_hematesisMore
+- utter_hematesisMain
